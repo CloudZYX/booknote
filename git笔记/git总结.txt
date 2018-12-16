@@ -1,0 +1,20 @@
+一、使用前准备
+1.下载git（一键式安装，具体请看《windows下git的下载》）
+2.前往GitHub网站(https://github.com/)使用邮箱注册账号
+3.配置git用户（具体请看《初次运行git前的配置》）
+git config --global user.name "username"
+git config --global user.email "johndoe@example.com"
+(红字请根据实际情况修改)
+
+
+二、常用命令
+git clone：克隆代码，将远端代码拉到本地
+例：git clone https://github.com/CloudZYX/booknote.git
+
+git add .
+提交当前目录下的文件修改
+
+git commit -m 提交日志
+将在当前目录下的文件修改添加到本地仓库
+
+git push origin master 推送修改到远程仓库
