@@ -18,3 +18,25 @@ git commit -m 提交日志
 将在当前目录下的文件修改添加到本地仓库
 
 git push origin master 推送修改到远程仓库
+
+
+三、推送新项目到远端
+1.git init 
+2.git add .
+3.git commit -m <message>
+4.git remote add origin <code-address>(xxx.git)
+5.git push origin master
+
+四、分支管理
+1.将本地分支与远端分支绑定
+git branch --set-upstream master origin/master
+
+2.查看分支
+git branch 查看本地分支
+git branch -r 查看远端分支 
+
+3.创建与切换分支
+Git branch <name> 创建一个本地分支
+Git checkout <name> 切换到新分支上
+Git checkout -b <name> 创建并切换到新分支上
+Git push origin <name>:<name>新建远端分支并将本地分支推向远端
