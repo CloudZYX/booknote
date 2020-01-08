@@ -28,8 +28,10 @@ git push origin master 推送修改到远程仓库
 5.git push origin master
 
 四、分支管理
-1.将本地分支与远端分支绑定
-git branch --set-upstream master origin/master
+1.本地新建了一个分支 master，但是在远程没有
+git branch --set-upstream origin/master
+
+git push --set-upstream origin dev_filter_project
 
 2.查看分支
 git branch 查看本地分支
@@ -40,3 +42,7 @@ Git branch <name> 创建一个本地分支
 Git checkout <name> 切换到新分支上
 Git checkout -b <name> 创建并切换到新分支上
 Git push origin <name>:<name>新建远端分支并将本地分支推向远端
+
+4.管理分支
+git branch -D <name>删除本地分支
+git push origin --delete <name> 删除远程分支
